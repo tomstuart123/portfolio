@@ -1,0 +1,40 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import
+  'vendors/setUp';
+
+// 3. Base stuff
+@import
+  'base/colours',
+  'base/typography';
+
+// 4. Layout-related sections
+@import
+  'layout/mobileNav',
+  'layout/mainSection';
+
+// 5. Components
+@import
+  'components/button',
+  'components/images',
+  'components/wrapper';
+
+// 6. Section-specific styles
+@import
+  'section/sectionOne',
+  'section/sectionTwo',
+  'section/sectionThree',
+  'section/sectionFour',
+  'section/sectionSix',
+  'section/sectionFive';
+
+// 7. Themes
+@import
+  'themes/default';
+

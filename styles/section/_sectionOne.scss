@@ -1,0 +1,91 @@
+// HEADER BASE
+
+.landing {
+    display: flex;
+    flex-direction: column; 
+    height: 650px;
+    position: relative;
+    z-index: 1;  
+    justify-content: space-evenly; 
+    .landing__wrapper--nav {
+        height: 35%;
+
+    }
+}
+
+
+.backgroundFirst {
+    background: $lightColour;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    width: 450px;
+    z-index: -1;
+}
+
+
+// NAVIGATION
+
+.landing__list {
+    display: flex;
+    justify-content: space-between; 
+    padding-top: 30px; 
+    .landing__item {
+        list-style-type: none;
+        .landing__link--active {
+        text-decoration: none;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+        font-size: 1.5rem;
+        position: relative;
+    } 
+    } 
+}
+
+.landing__link--active::before {
+    content: '';
+    width: 65%;
+    height: 10%;
+    background-color: $midColour;
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+}
+
+.landing__button {
+    background: none;
+    border: solid $darkAccentColour 1px;
+    padding: 7.5px 10px;
+    font-weight: bold;
+}
+.landing__button:hover {
+    background: $darkAccentColour;
+    border: solid $lightAccentColour 2px;
+    color: $lightAccentColour;
+}
+
+// CONTENT
+
+.landing__textSection {
+    width: 50%;
+    
+}
+.landing__header {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.landing__header--active {
+    color: $midColour;
+}
+
+.landing__subHeader {
+    font-size: 1.25rem;
+    color: $gray;
+}
+
+.landing__paragraph {
+    font-size: 1.25rem;
+}
+

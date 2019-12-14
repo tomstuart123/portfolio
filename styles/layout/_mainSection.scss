@@ -1,0 +1,45 @@
+.mainSection {
+    display: flex;
+    justify-content: space-around;
+    height: 80%;
+}
+
+
+h2 {
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    width: 200px;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    // margin-top: 30px;
+    height: 30px;
+}
+
+h2::before {
+    content: '';
+    width: 200px;
+    height: 10%;
+    background-color: $midColour;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+}
+
+
+.sideSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+

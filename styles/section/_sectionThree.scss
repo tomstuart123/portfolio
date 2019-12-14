@@ -1,0 +1,109 @@
+.skills {
+    height: 600px;
+    padding-top: 40px;
+}
+
+.skills .skills__header {
+    margin-bottom: 75px;
+}
+
+.skills_main {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skills__imageContainer {
+    // background: linear-gradient(  #64c2cb, rgba(0, 0, 0, 0.5) ), url(../assets/2019-fall-Tom-Stuart-2-removebg.jpg);
+    // background: rgb(242, s242, 242);
+    background: $lightColour;
+    // height: 100%;
+    // background-size: cover;
+    // background-position: top;
+    margin-top: 20px;
+    width: 35%;
+    height: 70%;
+    border-radius: 10%;
+}
+
+.skills__image {
+    object-fit: cover;
+}
+
+.skills__sliderSection {
+    width: 50%;
+    height: 80%;
+}
+
+.skills__sliderHeaders {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.skills__subHeader--active {
+    position: relative;
+}
+
+
+.skills__subHeader--active::before {
+    content: '';
+    width: 200px;
+    height: 10%;
+    background-color: $midColour;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.skills__subHeader {
+    position: relative;
+    font-weight: 100;
+    color: rgb(140, 140, 140);
+}
+
+.skills__subHeader::before {
+    content: '';
+    width: 200px;
+    height: 10%;
+    background-color: $lightColour;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.skills__sliderContainer {
+    margin-top: 40px;
+}
+
+.skills__paragraph {
+    margin-top: 30px;
+} 
+
+ progress {
+    margin-top: 20px;
+    // width: 80%;
+    // border-radius: 20%;
+// 
+}
+
+// progress[value] {
+//   color: #0063a6;
+//   font-size: .6em;
+//   line-height: 1.5em;
+//   text-indent: .5em;
+//   width: 60%;
+//   height: 1rem;
+//   border: 1px solid $darkColour;
+// }
+
+
+progress::-moz-progress-bar { 
+    background: $lightColour; 
+}
+
+progress::-webkit-progress-bar { 
+    background: #fff; 
+}
+progress::-webkit-progress-value { 
+    background: $lightColour; 
+}
