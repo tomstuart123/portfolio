@@ -787,40 +787,46 @@ progress::-webkit-progress-value {
   background: #D0EEED;
 }
 
-.references {
+.social {
   background: #f2f2f2;
   padding-top: 40px;
+  height: 200px;
 }
 
 @media only screen and (max-width: 750px) {
-  .references {
+  .social {
     height: 400px;
   }
 }
 
 @media only screen and (max-width: 750px) {
-  .references__header {
-    margin-bottom: 75px;
+  .social__header {
+    margin-bottom: 150px;
   }
 }
 
-.references__main {
+.awesome {
+  font-size: 2rem;
+  cursor: pointer;
+  -webkit-transition: font-size 0.5s;
+  transition: font-size 0.5s;
+  position: relative;
+}
+
+.awesome:hover {
+  font-size: 2.2rem;
+}
+
+.social__main {
   height: 200px;
-}
-
-.references__paragraph {
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 30px;
-}
-
-@media only screen and (max-width: 450px) {
-  .references__paragraph {
-    font-size: 0.8rem;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 75px;
 }
 
 .footer {

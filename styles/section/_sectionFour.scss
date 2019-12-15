@@ -1,32 +1,45 @@
 
-.references {
+.social {
     background: rgb(242, 242, 242);
     padding-top: 40px;
+    height: 200px;
      @include media(750px) {
         height: 400px;
      }
 }
 
-.references__header {
+.social__header {
     @include media(750px) {
-        margin-bottom: 75px;
-     }
-    
+        margin-bottom: 150px;
+     }   
 }
 
-.references__main {
+.awesome {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: font-size 0.5s;
+    position: relative;
+}
+
+.awesome:hover {
+    font-size: 2.2rem;
+}
+
+// .fa-linkedin:hover::before {
+//     font-size: 2.2rem;
+//     position: absolute;
+//     content: 'Go to LinkedIn';
+//     bottom: 0;
+//     width: 50%;
+//     left: 0;
+// }
+
+
+
+.social__main {
     height: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 75px;
 }
 
-.references__paragraph {
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 30px;
-    @include media(450px) {
-      font-size: 0.8rem;
-
-     }
-}
