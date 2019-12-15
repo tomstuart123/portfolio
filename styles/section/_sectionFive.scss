@@ -1,6 +1,10 @@
 .portfolio {
     padding-top: 40px;
-    height: 1600px;
+    height: 1300px;
+}
+
+.portfolio--active {
+    height: 1000px;
 }
 
 .portfolio__container {
@@ -11,7 +15,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 75px;
-    height: 90%;
+    height: auto; 
 }
 
 
@@ -35,21 +39,37 @@
     position: relative;
 }
 
+.portfolio__link {
+    color: gray;
+    cursor: pointer;
+}
+
+.portfolio__link:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.portfolio__item--active .portfolio__link {
+    color: black;
+}
+
 
 .portfolio__item--active::before {
     content: '';
-    width: 80px;
+    width: 180px;
+    font-weight: 600;
     height: 10%;
     background-color: $midColour;
     position: absolute;
     bottom: -20px;
-    left: -30px;
+    left: -20px;
 }
 
 .portfolio__gallery {
+    padding-top: 75px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -75,7 +95,12 @@
 
 .portfolio__galleryItem--activeTwo {
     Grid-row: span 2;
+    // Grid-column: span ;
     padding: 8%;
+}
+
+.portfolio__galleryItem--activeThree {
+    Grid-column: span 3;
 }
 
 // .portfolio__galleryItem:hover {
@@ -84,7 +109,6 @@
 
 .portfolio__gallery img {
   margin: 0 auto;
-  margin-top: 40px;
   display: block;
   object-fit: contain;
   max-width: 100%;

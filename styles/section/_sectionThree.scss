@@ -4,7 +4,7 @@
 }
 
 .skills .skills__header {
-    margin-bottom: 75px;
+    margin-bottom: 90px;
 }
 
 .skills_main {
@@ -19,14 +19,23 @@
     // height: 100%;
     // background-size: cover;
     // background-position: top;
-    margin-top: 20px;
+    margin-top: 25px;
+    padding-top: 0px;
     width: 35%;
     height: 70%;
     border-radius: 10%;
 }
 
+
+
 .skills__image {
-    object-fit: cover;
+    width: 80%;
+    margin: 50px auto;
+    display: block;
+}
+
+.skills__image--active {
+    width: 70%;
 }
 
 .skills__sliderSection {
@@ -42,6 +51,7 @@
 
 .skills__subHeader--active {
     position: relative;
+    cursor: pointer;
 }
 
 
@@ -56,6 +66,7 @@
 }
 
 .skills__subHeader {
+    cursor: pointer;
     position: relative;
     font-weight: 100;
     color: rgb(140, 140, 140);
@@ -69,6 +80,15 @@
     position: absolute;
     bottom: -20px;
     left: 0;
+}
+
+.skills__subHeaderOne {
+    cursor: pointer;
+    
+}
+.skills__subHeaderOne:hover {
+    font-weight: 600;
+    color: black;
 }
 
 .skills__sliderContainer {

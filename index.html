@@ -27,11 +27,11 @@
         </section>
         <section class="landing__wrapper--head wrapper">
             <section class='landing__textSection'>
-                <h3 class='landing__subHeader'>Hey, I'm Tom! I wear two hats!</h3>
+                <h3 class='landing__subHeader'>Hi, I'm Tom! I have grown a double life!</h3>
                 <h1 class='landing__header'> Web Developer &<span class='landing__header--active'> Product Manager</span> </h1>
-                <h3 class='landing__paragraph'>I love working with these dual backgrounds and in diverse teams to develop customer centered software</h3>
+                <h3 class='landing__paragraph'>I don't keep this a secret! I love working with my dual background and other diverse people to develop user centered software</h3>
                 <div class='landing__imageContainer imageContainer'>
-                    <img class='landing__image image'/>
+                    <img src='./assets/illustrations/illLanding(2).png' class='landing__image image' src='illustration of me holding a phone surrounded by two seperately growing trees'/>
                 </div>
             </section>
             <div class='backgroundFirst'>
@@ -43,8 +43,8 @@
             <section class='about__container wrapper'>
                 <h2 class='about__header'>ABOUT ME</h2>
                 <section class='about__main sideSection'>
-                    <p class='about__paragraph'>Hey, I'm Tom, a web developer coming out of Juno College (HackerYou). I have a secret though... I actually wear two hats! A Developer hat and a Product hat!<br /><br />
-                    This product mindset has come from four years working in tech at both Samsung and the startup incubator InMotion Ventures. Now I always like to write my software on customer first principles. If you feel the same - or even if you don't and just want to chat about it - reach out and lets grab a coffee!</p>
+                    <p class='about__paragraph'> Hi I'm Tom! A web developer and product guy from the UK looking to build new things in Toronto!<br /><br />
+                    My product mindset has come from four years working in customer first technology at both Samsung and the startup incubator InMotion Ventures. Now as a developer coming out of the amazing Juno College (HackerYou), I write my code with users put first! If you feel the same - or even if you don't and just want to chat about it - let's grab a coffee!</p>
                 </section>
             </section>
         </section>
@@ -53,23 +53,27 @@
                 <h2 class='skills__header'>SKILLS</h2>
                 <div class='skills__main mainSection'>
                     <div class='skills__imageContainer imageContainer'>
-                        <img src='./assets/2019-fall-Tom-Stuart-2-removebg (1).png' alt='image of myself with a blue background' class='skills__image image'/>
+                        <img src='./assets/illustrations/illWebDev.png' alt='illustration of myself but focused on coding and web development' class='skills__image image'/>
+                    </div>
+                    <div class='skills__imageContainer imageContainer visuallyHidden'>
+                        <img src='./assets/illustrations/illProduct.png'
+                            alt='alternative illustration of myself but focused on product and the customer' class='skills__image skills__image--active image' />
                     </div>
                     <div class='skills__sliderSection'>
                         <div class='skills__sliderHeaders'>
-                            <h3 class='skills__subHeader--active'>Developer Skills</h3>
-                            <h3 class='skills__subHeader'>Product Skills</h3>
+                            <h3 class='skills__subHeaderOne skills__subHeader--active'>Developer Skills</h3>
+                            <h3 class='skills__subHeaderOne  skills__subHeader'>Product Skills</h3>
                         </div>
                         <div class='skills__sliderContainer'>
-                            <p class='skills__paragraph'>Front-end (Javascript, J-Query)</p>
+                            <p class='skills__paragraph'>Front-end (Javascript, J-Query, HTML, CSS)</p>
                             <progress max="100" value="80"></progress>
-                            <p class='skills__paragraph'>Modular Programming (React, BEM)</p>
+                            <p class='skills__paragraph'>Front-end Modular (React)</p>
                             <progress max="100" value="70"></progress>
-                            <p class='skills__paragraph'>Back-end & Data Analysis(Node.js, Python)</p>
+                            <p class='skills__paragraph'>Back-end (Node.js, Python)</p>
                             <progress max="100" value="30"></progress>
                         </div>
-                        <div class='skills__sliderDeveloper visuallyHidden'>
-                            <p class='skills__paragraph'>Customer experience design</p>
+                        <div class='skills__sliderContainer visuallyHidden'>
+                            <p class='skills__paragraph'>Customer Insight, Data & UX design</p>
                             <progress max="100" value="90"></progress>
                             <p class='skills__paragraph'>Communication & Stakeholder Management</p>
                             <progress max="100" value="80"></progress>
@@ -93,12 +97,11 @@
                 <h2 class='portfolio__header'>PORTFOLIO</h2>
                 <section class='portfolio__main mainSection'>
                     <ul class='portfolio__list'>
-                        <li class='portfolio__item--active'><a class='portfolio__link'>All</a></li>
-                        <li class='portfolio__item'><a class='portfolio__link'>Developer</a></li>
-                        <li class='portfolio__item'><a class='portfolio__link'>Product</a></li>
+                        <li class='portfolio__item portfolio__item--active'><a class='portfolio__link'>Development</a></li>
+                        <li class='portfolio__item portfolio__item--inactive'><a class='portfolio__link'>Product Led</a></li>
                     </ul>
                     <div class='portfolio__gallery'>
-                        <div class='portfolio__galleryItem portfolio__galleryItem--active'> 
+                        <div class='portfolio__galleryItem portfolio__galleryItem--activeThree'> 
                             <!-- <div class='portfolio__imageContainer imageContainer'> -->
                                 <img src='./assets/portfolio/macbook-pro-clay (1).png' class='portfolio__image' alt='Yama5 Yoga Portfolio Image'/>
                             <!-- </div> -->
@@ -108,12 +111,12 @@
                                 <img src='./assets/portfolio/iPhone X (Chattr).png'class='portfolio__image' alt='Chattr Messaging Portfolio Image'/>
                             <!-- </div> -->
                         </div>
-                        <div class='portfolio__galleryItem portfolio__galleryItem--activeTwo'>
+                        <div class='portfolio__galleryItem portfolio__galleryItem--activeTwo visuallyHidden'>
                             <!-- <div class='portfolio__imageContainer imageContainer'> -->
-                            <img src='./assets/portfolio/iPhone X (Chattr).png' class='portfolio__image' alt='Yama5 Yoga Portfolio Image' />
+                            <img src='./assets/portfolio/iPhone X (Havn).png' class='portfolio__image' alt='Havn ridehailing app Portfolio Image' />
                             <!-- </div> -->
                         </div>
-                        <div class='portfolio__galleryItem'>
+                        <div class='portfolio__galleryItem portfolio__galleryItem--active'>
                             <!-- <div class='portfolio__imageContainer imageContainer'> -->
                             <img src='./assets/portfolio/macbook-pro-clay (iVino).png' class='portfolio__image'
                                 alt='iVino WineApp Portfolio Image' />
@@ -124,16 +127,16 @@
                             <img src='./assets/portfolio/macbook-pro-clay (hueAreYou).png' class='portfolio__image' alt='hueAreYou Makeup Portfolio Image' />
                             <!-- </div> -->
                         </div>
-                        <div class='portfolio__galleryItem portfolio__galleryItem--active'>
+                        <div class='portfolio__galleryItem portfolio__galleryItem--active visuallyHidden'>
                             <!-- <div class='portfolio__imageContainer imageContainer'> -->
-                            <img src='./assets/portfolio/macbook-pro-clay (1).png' class='portfolio__image'
-                                alt='Chattr Messaging Portfolio Image' />
+                            <img src='./assets/portfolio/macbook-pro-clay (samsung).png' class='portfolio__image'
+                                alt='Samsung Upgrade Progamme Portfolio Image' />
                             <!-- </div> -->
                         </div>
-                        <div class='portfolio__galleryItem'>
+                        <div class='portfolio__galleryItem portfolio__galleryItem--active visuallyHidden'>
                             <!-- <div class='portfolio__imageContainer imageContainer'> -->
-                            <img src='./assets/portfolio/macbook-pro-clay (1).png' class='portfolio__image'
-                                alt='Chattr Messaging Portfolio Image' />
+                            <img src='./assets/portfolio/macbook-pro-clay (eden).png' class='portfolio__image'
+                                alt='EdenCup Period care Website Portfolio Image' />
                             <!-- </div> -->
                         </div>
 
@@ -146,19 +149,24 @@
     </main>
     <footer class='footer'>
         <div class='footer__container wrapper'> 
-            <h2 class='footer__header'>Let's get a coffee</h2>
+            <h2 class='footer__header'>Let's get a coffee or code!</h2>
             <div class='footer__main'>
-                <div>
-                    <h3 class='footer__subHeader'>Email</h3>
-                    <p class='footer__paragraph'>tomstuart123@hotmail.co.uk</p>
+                <div class='footer__text'>
+                    <div>
+                        <h3 class='footer__subHeader'>If you ever want to grab a coffee or meet up to chat through a code challenge, drop me an email. I'm knew to Toronto and always like to meet to talk shop! </h3>
+                       
+                    </div>
+                    <div>
+                        <p class='footer__paragraph'><span>Email: </span>tomstuart123@hotmail.co.uk</p>
+                    </div>
                 </div>
-                <div>
-                    <h3 class='footer__subHeader'>Phone</h3>
-                    <p class='footer__paragraph'>+1-437-248-4293</p>
+                <div class='footer__imageContainer imageContainer'>
+                    <img src='./assets/illustrations/illPairProgram.svg' class='footer__image image' src='illustration of me collaborating with someone at a computer' />
                 </div>
             </div>
         </div>
     </footer>
-    
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+    <script src='index.js'></script>
 </body>
 </html>
