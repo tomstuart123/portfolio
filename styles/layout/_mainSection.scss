@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-around;
     height: 80%;
+    @include media(950px) {
+        // height: 100%;
+     } 
 }
 
 
@@ -14,6 +17,9 @@ h2 {
     margin: 0 auto;
     // margin-top: 30px;
     height: 30px;
+    @include media(950px) {
+        font-size: 1.1rem;
+     } 
 }
 
 h2::before {

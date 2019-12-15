@@ -2,6 +2,30 @@
 .about {
     background: rgb(242, 242, 242);
     padding-top: 40px;
+    @include media(1150px) {
+        height: 400px;
+     }
+    @include media(950px) {
+        height: 500px;
+     }
+     @include media(550px) {
+        height: 600px;
+     }
+     @include media(450px) {
+        height: 760px;
+     }
+}
+
+.about__header {
+    @include media(1150px) {
+        margin-bottom: 35px;
+     }
+    @include media(950px) {
+        margin-bottom: 75px;
+     }
+     @include media(550px) {
+        // margin-bottom: 0px;
+     }
 }
 
 .about__paragraph {
@@ -11,4 +35,9 @@
     font-size: 1rem;
     font-weight: 600;
     line-height: 30px;
+    @include media(550px) {
+       height: 100%;
+     }
+    
+
 }

@@ -2,6 +2,16 @@
 .references {
     background: rgb(242, 242, 242);
     padding-top: 40px;
+     @include media(750px) {
+        height: 400px;
+     }
+}
+
+.references__header {
+    @include media(750px) {
+        margin-bottom: 75px;
+     }
+    
 }
 
 .references__main {
@@ -15,4 +25,8 @@
     font-size: 1rem;
     font-weight: 600;
     line-height: 30px;
+    @include media(450px) {
+      font-size: 0.8rem;
+
+     }
 }
