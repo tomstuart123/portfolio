@@ -108,7 +108,6 @@
     // transition: grid-row-start 300ms linear;
     // transition: transform 300ms ease;
     // transition: all 0.5s ease;
-    cursor: pointer;
     padding: 2%;
     // width: 100%;
     @include media(750px) {
@@ -213,16 +212,35 @@
   @include media(950px) {
        padding: 8% 15%
      }
-     @include media(950px) {
-       padding: 12% 15%
+}
+
+
+.portfolio__galleryItem--activeTwo .imageCaption {
+  padding: 25%;
+  @include media(950px) {
+       padding: 50% 20%;
      }
+     @include media(750px) {
+       padding: 25%;
+     }
+}
+
+.portfolio__galleryItem--activeThree .imageCaption {
+  padding: 4% 30%;
+  @include media(950px) {
+       padding: 5% 25%;
+     }
+     @include media(750px) {
+       padding: 12% 15%;
+     }
+
 }
 
 .portfolio__galleryItem:hover .imageCaption {
   display: block;
-  background: linear-gradient(to top, rgb(184, 184, 184), 10%, rgb(232, 232, 232));
-  //  background: $midColour;
-  opacity: 0.9; 
+  // background: linear-gradient(to top, rgb(184, 184, 184), 10%, rgb(232, 232, 232));
+   background: rgb(232, 232, 232);
+  opacity: 0.95; 
   
   h3 {
     color: black;
@@ -248,24 +266,4 @@
   }
 }
 
-.portfolio__galleryItem--activeTwo .imageCaption {
-  padding: 25%;
-  @include media(950px) {
-       padding: 50% 20%;
-     }
-     @include media(750px) {
-       padding: 25%;
-     }
-}
-
-.portfolio__galleryItem--activeThree .imageCaption {
-  padding: 5% 35%;
-  @include media(950px) {
-       padding: 5% 25%;
-     }
-     @include media(750px) {
-       padding: 12% 15%;
-     }
-
-}
 

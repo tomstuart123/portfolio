@@ -1,5 +1,4 @@
 // TO DO
-// 2. Add haircuts
 // 3. Make hover portfolio and progress bars in mobile
 // 4. Animate portfolio / skills section
 // 5. Add Resume page

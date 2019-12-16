@@ -319,21 +319,27 @@ h2::before {
   height: 100%;
   top: 0px;
   right: 0px;
-  width: 28%;
+  width: 26.5%;
   z-index: -1;
+}
+
+@media only screen and (max-width: 1150px) {
+  .backgroundFirst {
+    width: 27.5%;
+  }
 }
 
 @media only screen and (max-width: 950px) {
   .backgroundFirst {
-    width: 49%;
+    width: 50%;
   }
 }
 
 .landing__imageContainer {
   position: absolute;
-  top: 100px;
-  right: 50px;
-  width: 50%;
+  top: 140px;
+  right: 80px;
+  width: 40%;
 }
 
 @media only screen and (max-width: 950px) {
@@ -615,6 +621,11 @@ h2::before {
 
 .skills__image--active {
   width: 70%;
+}
+
+.imageTwo {
+  width: 100%;
+  margin-left: 60px;
 }
 
 .skills__sliderSection {
@@ -1196,7 +1207,6 @@ progress::-webkit-progress-value {
 .portfolio__galleryItem {
   background: whitesmoke;
   position: relative;
-  cursor: pointer;
   padding: 2%;
 }
 
@@ -1331,17 +1341,42 @@ progress::-webkit-progress-value {
   }
 }
 
+.portfolio__galleryItem--activeTwo .imageCaption {
+  padding: 25%;
+}
+
 @media only screen and (max-width: 950px) {
-  .portfolio__galleryItem .imageCaption {
+  .portfolio__galleryItem--activeTwo .imageCaption {
+    padding: 50% 20%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .portfolio__galleryItem--activeTwo .imageCaption {
+    padding: 25%;
+  }
+}
+
+.portfolio__galleryItem--activeThree .imageCaption {
+  padding: 4% 30%;
+}
+
+@media only screen and (max-width: 950px) {
+  .portfolio__galleryItem--activeThree .imageCaption {
+    padding: 5% 25%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .portfolio__galleryItem--activeThree .imageCaption {
     padding: 12% 15%;
   }
 }
 
 .portfolio__galleryItem:hover .imageCaption {
   display: block;
-  background: -webkit-gradient(linear, left bottom, left top, from(#b8b8b8), color-stop(10%), to(#e8e8e8));
-  background: linear-gradient(to top, #b8b8b8, 10%, #e8e8e8);
-  opacity: 0.9;
+  background: #e8e8e8;
+  opacity: 0.95;
 }
 
 .portfolio__galleryItem:hover .imageCaption h3 {
@@ -1376,38 +1411,6 @@ progress::-webkit-progress-value {
 @media only screen and (max-width: 950px) {
   .portfolio__galleryItem:hover .imageCaption p {
     font-size: 0.75rem;
-  }
-}
-
-.portfolio__galleryItem--activeTwo .imageCaption {
-  padding: 25%;
-}
-
-@media only screen and (max-width: 950px) {
-  .portfolio__galleryItem--activeTwo .imageCaption {
-    padding: 50% 20%;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .portfolio__galleryItem--activeTwo .imageCaption {
-    padding: 25%;
-  }
-}
-
-.portfolio__galleryItem--activeThree .imageCaption {
-  padding: 5% 35%;
-}
-
-@media only screen and (max-width: 950px) {
-  .portfolio__galleryItem--activeThree .imageCaption {
-    padding: 5% 25%;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .portfolio__galleryItem--activeThree .imageCaption {
-    padding: 12% 15%;
   }
 }
 /*# sourceMappingURL=main.css.map */
