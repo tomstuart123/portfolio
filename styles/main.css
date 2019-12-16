@@ -790,31 +790,13 @@ progress::-webkit-progress-value {
 .social {
   background: #f2f2f2;
   padding-top: 40px;
-  height: 200px;
+  height: 225px;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 550px) {
   .social {
-    height: 400px;
+    height: 340px;
   }
-}
-
-@media only screen and (max-width: 750px) {
-  .social__header {
-    margin-bottom: 150px;
-  }
-}
-
-.awesome {
-  font-size: 2rem;
-  cursor: pointer;
-  -webkit-transition: font-size 0.5s;
-  transition: font-size 0.5s;
-  position: relative;
-}
-
-.awesome:hover {
-  font-size: 2.2rem;
 }
 
 .social__main {
@@ -827,6 +809,110 @@ progress::-webkit-progress-value {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 75px;
+}
+
+@media only screen and (max-width: 550px) {
+  .social__main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.social__header {
+  width: 250px;
+}
+
+.social__header::before {
+  content: '';
+  width: 260px;
+  height: 10%;
+  background-color: #64c2cb;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+}
+
+.socialIcon {
+  font-size: 2rem;
+  cursor: pointer;
+  -webkit-transition: content 0.5s;
+  transition: content 0.5s;
+  position: relative;
+}
+
+@media only screen and (max-width: 550px) {
+  .socialIcon {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+.socialIcon:hover {
+  position: relative;
+}
+
+.socialIcon:hover::before {
+  position: absolute;
+  top: 60px;
+  width: 150px;
+  left: -20px;
+  font-size: 0.75rem;
+  color: black;
+}
+
+@media only screen and (max-width: 550px) {
+  .socialIcon:hover::before {
+    left: 25px;
+    text-align: center;
+  }
+}
+
+.linkedin:hover::before {
+  content: 'Go to LinkedIn';
+  left: -30px;
+}
+
+@media only screen and (max-width: 550px) {
+  .linkedin:hover::before {
+    left: 25px;
+    text-align: center;
+  }
+}
+
+.twitter:hover::before {
+  content: 'Go to Twitter';
+}
+
+@media only screen and (max-width: 550px) {
+  .twitter:hover::before {
+    left: 25px;
+    text-align: center;
+  }
+}
+
+.github:hover::before {
+  content: 'Go to Github';
+}
+
+@media only screen and (max-width: 550px) {
+  .github:hover::before {
+    left: 25px;
+    text-align: center;
+  }
+}
+
+.foundersbeta:hover::before {
+  content: 'Go to FoundersBeta';
+  left: -40px;
+}
+
+@media only screen and (max-width: 550px) {
+  .foundersbeta:hover::before {
+    left: 25px;
+    text-align: center;
+  }
 }
 
 .footer {

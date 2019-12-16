@@ -1,7 +1,7 @@
 // TO DO
-// 1: Add social links
-// 2: Make portfolio images nicer
-// 3. Work on progress bars colurs (and appear in mobile)
+// 1: Make portfolio images nicer
+// 2. Work on progress bars colurs (and appear in mobile)
+// 3. Add haircuts
 // 4. Add animations to site
 // 5. Add Resume page
 // 6. Add about me page

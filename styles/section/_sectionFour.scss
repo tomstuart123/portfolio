@@ -2,38 +2,11 @@
 .social {
     background: rgb(242, 242, 242);
     padding-top: 40px;
-    height: 200px;
-     @include media(750px) {
-        height: 400px;
-     }
+    height: 225px;
+    @include media(550px) {
+        height: 340px;
+     } 
 }
-
-.social__header {
-    @include media(750px) {
-        margin-bottom: 150px;
-     }   
-}
-
-.awesome {
-    font-size: 2rem;
-    cursor: pointer;
-    transition: font-size 0.5s;
-    position: relative;
-}
-
-.awesome:hover {
-    font-size: 2.2rem;
-}
-
-// .fa-linkedin:hover::before {
-//     font-size: 2.2rem;
-//     position: absolute;
-//     content: 'Go to LinkedIn';
-//     bottom: 0;
-//     width: 50%;
-//     left: 0;
-// }
-
 
 
 .social__main {
@@ -41,5 +14,86 @@
     display: flex;
     flex-direction: row;
     margin-top: 75px;
+    @include media(550px) {
+        flex-wrap: wrap;
+     } 
+    
+}
+
+
+.social__header {
+    width: 250px;
+}
+.social__header::before {
+    content: '';
+    width: 260px;
+    height: 10%;
+    background-color: $midColour;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+}
+
+.socialIcon {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: content 0.5s;
+    position: relative;
+    @include media(550px) {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 50px;
+     } 
+    
+}
+
+.socialIcon:hover {
+    // font-size: 2.2rem;
+    position: relative;
+}
+
+.socialIcon:hover::before {
+    position: absolute;
+    top: 60px;
+    width: 150px;
+    left: -20px;
+    font-size: 0.75rem;
+    color: black;
+    @include media(550px) {
+        left: 25px;
+        text-align: center;
+     } 
+}
+
+.linkedin:hover::before {
+    content: 'Go to LinkedIn';
+    left: -30px;
+    @include media(550px) {
+        left: 25px;
+        text-align: center;
+     } 
+}
+.twitter:hover::before {
+    content: 'Go to Twitter';
+    @include media(550px) {
+        left: 25px;
+        text-align: center;
+     } 
+}
+.github:hover::before {
+    content: 'Go to Github';
+    @include media(550px) {
+        left: 25px;
+        text-align: center;
+     } 
+}
+.foundersbeta:hover::before {
+    content: 'Go to FoundersBeta';
+    left: -40px;
+    @include media(550px) {
+        left: 25px;
+        text-align: center;
+     } 
 }
 
