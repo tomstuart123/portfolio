@@ -407,6 +407,12 @@ h2::before {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 450px) {
+  .landing__button {
+    font-size: 0.8rem;
+  }
+}
+
 .landing__button:hover {
   background: white;
   border: solid black 1px;
@@ -656,7 +662,8 @@ h2::before {
 @media only screen and (max-width: 750px) {
   .skills__sliderHeaders {
     margin-top: 50px;
-    padding: 0 20px;
+    padding: 0px;
+    font-size: 0.9rem;
   }
 }
 
@@ -742,7 +749,6 @@ h2::before {
 @media only screen and (max-width: 450px) {
   .skills__paragraph {
     font-size: 0.8rem;
-    text-align: center;
   }
 }
 
@@ -1411,6 +1417,19 @@ progress::-webkit-progress-value {
 @media only screen and (max-width: 950px) {
   .portfolio__galleryItem:hover .imageCaption p {
     font-size: 0.75rem;
+  }
+}
+
+.mobileGuide {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.8rem;
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .mobileGuide {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */

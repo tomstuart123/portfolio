@@ -266,4 +266,14 @@
   }
 }
 
+.mobileGuide {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.8rem;
+  display: none;
+  @include media(450px) {
+    display: block;
+  }
+}
+
 

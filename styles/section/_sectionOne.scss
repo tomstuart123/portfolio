@@ -92,11 +92,15 @@
     border: solid $darkAccentColour 1px;
     padding: 7.5px 10px;
     font-weight: bold;
+    @include media(450px) {
+        font-size: 0.8rem; 
+     }
 }
 .landing__button:hover {
     background: white;
     border: solid black 1px;
 }
+
 
 // CONTENT
 
