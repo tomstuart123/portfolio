@@ -1,8 +1,8 @@
 .portfolio {
-    padding-top: 40px;
-    height: 1300px;
+    padding: 50px 0;
+    height: auto;
     @include media(750px) {
-       height: 2000px;
+       height: auto;
      }
     
 }
@@ -10,19 +10,19 @@
 .portfolio--active {
     height: 1000px;
     @include media(750px) {
-       height: 1700px;
+       height: 1600px;
      }
 }
 
 .portfolio__container {
-    height: 100%;
+    height: auto;
 }
 
 .portfolio__main {
     display: flex;
     flex-direction: column;
     padding-top: 75px;
-    height: auto; 
+    // height: auto; 
 }
 
 
@@ -35,9 +35,17 @@
     .portfolio__item, .portfolio__item--active {
         text-decoration: none;
         list-style-type: none;
+        text-align: center;
+
         .portfolio__link {
             list-style-type: none;
             text-decoration: none;
+            color: gray;
+    cursor: pointer;
+    width: 150px;
+    @include media(450px) {
+       font-size: 0.8rem;
+     }
         }
     }
     @include media(950px) {
@@ -55,14 +63,6 @@
     position: relative;
 }
 
-.portfolio__link {
-    color: gray;
-    cursor: pointer;
-    @include media(450px) {
-       font-size: 0.9rem;
-     }
-}
-
 .portfolio__link:hover {
     color: black;
     cursor: pointer;
@@ -75,7 +75,7 @@
 
 .portfolio__item--active::before {
     content: '';
-    width: 180px;
+    width: 170px;
     font-weight: 600;
     height: 10%;
     background-color: $midColour;
@@ -92,18 +92,19 @@
     padding-top: 75px;
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     @include media(750px) {
        grid-template-columns: 1fr;
-       grid-template-rows: 300px 300px 300px 300px 300px;
+       grid-template-rows: 300px 300px 300px 300px 300px 300px;
      }
 
 }
 
 .portfolio__galleryItem {
     background: rgb(245, 245, 245);
+    position: relative;
     // transition: grid-row-start 300ms linear;
     // transition: transform 300ms ease;
     // transition: all 0.5s ease;
@@ -130,7 +131,6 @@
     @include media(750px) {
        Grid-column: span 1;
      }
-    // Grid-column: span ;
     padding: 8%;
 }
 
@@ -163,6 +163,15 @@
       @include media(950px) {
       margin-top: 30px;
      }
+
+     @include media(750px) {
+      margin-top: 0px;
+     }
+
+     @include media(550px) {
+      margin-top: 30px;
+     }
+
      @include media(450px) {
       margin-top: 50px;
      }
@@ -173,7 +182,7 @@
     @include media(950px) {
       margin-top: 75px;
      }
-     @include media(950px) {
+     @include media(750px) {
       margin-top: 0px;
      }
      @include media(450px) {
@@ -183,9 +192,80 @@
 
 .portfolio__galleryItem--activeThree img {
     @include media(750px) {
-        margin-top: 30px;
+        margin-top: 0px;
+     }
+
+     @include media(550px) {
+      margin-top: 30px;
      }
      @include media(450px) {
       margin-top: 50px;
      }
 }
+.portfolio__galleryItem .imageCaption {
+  display: none;
+  height: 75%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 8% 20%;
+  @include media(950px) {
+       padding: 8% 15%
+     }
+     @include media(950px) {
+       padding: 12% 15%
+     }
+}
+
+.portfolio__galleryItem:hover .imageCaption {
+  display: block;
+  background: linear-gradient(to top, rgb(184, 184, 184), 10%, rgb(232, 232, 232));
+  //  background: $midColour;
+  opacity: 0.9; 
+  
+  h3 {
+    color: black;
+    font-size: 1rem;
+    @include media(1100px) {
+       font-size: 0.9rem;
+     }
+    @include media(950px) {
+       font-size: 0.85rem;
+     }
+     
+  }
+  p {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    @include media(1100px) {
+       font-size: 0.8rem;
+     }
+    @include media(950px) {
+       font-size: 0.75rem;
+     }
+  }
+}
+
+.portfolio__galleryItem--activeTwo .imageCaption {
+  padding: 25%;
+  @include media(950px) {
+       padding: 50% 20%;
+     }
+     @include media(750px) {
+       padding: 25%;
+     }
+}
+
+.portfolio__galleryItem--activeThree .imageCaption {
+  padding: 5% 35%;
+  @include media(950px) {
+       padding: 5% 25%;
+     }
+     @include media(750px) {
+       padding: 12% 15%;
+     }
+
+}
+

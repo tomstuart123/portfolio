@@ -639,11 +639,13 @@ h2::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-right: 20px;
 }
 
 @media only screen and (max-width: 750px) {
   .skills__sliderHeaders {
     margin-top: 50px;
+    padding: 0 20px;
   }
 }
 
@@ -761,7 +763,7 @@ progress {
 }
 
 .lowProd[value]::before {
-  content: '^ Focus Area - learning adobe suite to support working with designers';
+  content: '^ Focus Area - improving my use of adobe suite to support working with designers';
   position: absolute;
   left: 0;
   bottom: -100%;
@@ -1051,13 +1053,13 @@ progress::-webkit-progress-value {
 }
 
 .portfolio {
-  padding-top: 40px;
-  height: 1300px;
+  padding: 50px 0;
+  height: auto;
 }
 
 @media only screen and (max-width: 750px) {
   .portfolio {
-    height: 2000px;
+    height: auto;
   }
 }
 
@@ -1067,12 +1069,12 @@ progress::-webkit-progress-value {
 
 @media only screen and (max-width: 750px) {
   .portfolio--active {
-    height: 1700px;
+    height: 1600px;
   }
 }
 
 .portfolio__container {
-  height: 100%;
+  height: auto;
 }
 
 .portfolio__main {
@@ -1084,7 +1086,6 @@ progress::-webkit-progress-value {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 75px;
-  height: auto;
 }
 
 .portfolio__list {
@@ -1105,11 +1106,21 @@ progress::-webkit-progress-value {
 .portfolio__list .portfolio__item, .portfolio__list .portfolio__item--active {
   text-decoration: none;
   list-style-type: none;
+  text-align: center;
 }
 
 .portfolio__list .portfolio__item .portfolio__link, .portfolio__list .portfolio__item--active .portfolio__link {
   list-style-type: none;
   text-decoration: none;
+  color: gray;
+  cursor: pointer;
+  width: 150px;
+}
+
+@media only screen and (max-width: 450px) {
+  .portfolio__list .portfolio__item .portfolio__link, .portfolio__list .portfolio__item--active .portfolio__link {
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 950px) {
@@ -1134,17 +1145,6 @@ progress::-webkit-progress-value {
   position: relative;
 }
 
-.portfolio__link {
-  color: gray;
-  cursor: pointer;
-}
-
-@media only screen and (max-width: 450px) {
-  .portfolio__link {
-    font-size: 0.9rem;
-  }
-}
-
 .portfolio__link:hover {
   color: black;
   cursor: pointer;
@@ -1156,7 +1156,7 @@ progress::-webkit-progress-value {
 
 .portfolio__item--active::before {
   content: '';
-  width: 180px;
+  width: 170px;
   font-weight: 600;
   height: 10%;
   background-color: #64c2cb;
@@ -1178,8 +1178,8 @@ progress::-webkit-progress-value {
   display: grid;
   -ms-grid-columns: 1.5fr 1fr 1fr;
       grid-template-columns: 1.5fr 1fr 1fr;
-  -ms-grid-rows: 300px 300px 300px;
-      grid-template-rows: 300px 300px 300px;
+  -ms-grid-rows: 300px 300px 300px 300px;
+      grid-template-rows: 300px 300px 300px 300px;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
 }
@@ -1188,13 +1188,14 @@ progress::-webkit-progress-value {
   .portfolio__gallery {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 300px 300px 300px 300px 300px;
-        grid-template-rows: 300px 300px 300px 300px 300px;
+    -ms-grid-rows: 300px 300px 300px 300px 300px 300px;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
   }
 }
 
 .portfolio__galleryItem {
   background: whitesmoke;
+  position: relative;
   cursor: pointer;
   padding: 2%;
 }
@@ -1260,6 +1261,18 @@ progress::-webkit-progress-value {
   }
 }
 
+@media only screen and (max-width: 750px) {
+  .portfolio__galleryItem--active img {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .portfolio__galleryItem--active img {
+    margin-top: 30px;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .portfolio__galleryItem--active img {
     margin-top: 50px;
@@ -1272,7 +1285,7 @@ progress::-webkit-progress-value {
   }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 750px) {
   .portfolio__galleryItem--activeTwo img {
     margin-top: 0px;
   }
@@ -1286,6 +1299,12 @@ progress::-webkit-progress-value {
 
 @media only screen and (max-width: 750px) {
   .portfolio__galleryItem--activeThree img {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .portfolio__galleryItem--activeThree img {
     margin-top: 30px;
   }
 }
@@ -1293,6 +1312,102 @@ progress::-webkit-progress-value {
 @media only screen and (max-width: 450px) {
   .portfolio__galleryItem--activeThree img {
     margin-top: 50px;
+  }
+}
+
+.portfolio__galleryItem .imageCaption {
+  display: none;
+  height: 75%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 8% 20%;
+}
+
+@media only screen and (max-width: 950px) {
+  .portfolio__galleryItem .imageCaption {
+    padding: 8% 15%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .portfolio__galleryItem .imageCaption {
+    padding: 12% 15%;
+  }
+}
+
+.portfolio__galleryItem:hover .imageCaption {
+  display: block;
+  background: -webkit-gradient(linear, left bottom, left top, from(#b8b8b8), color-stop(10%), to(#e8e8e8));
+  background: linear-gradient(to top, #b8b8b8, 10%, #e8e8e8);
+  opacity: 0.9;
+}
+
+.portfolio__galleryItem:hover .imageCaption h3 {
+  color: black;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .portfolio__galleryItem:hover .imageCaption h3 {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .portfolio__galleryItem:hover .imageCaption h3 {
+    font-size: 0.85rem;
+  }
+}
+
+.portfolio__galleryItem:hover .imageCaption p {
+  color: black;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .portfolio__galleryItem:hover .imageCaption p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .portfolio__galleryItem:hover .imageCaption p {
+    font-size: 0.75rem;
+  }
+}
+
+.portfolio__galleryItem--activeTwo .imageCaption {
+  padding: 25%;
+}
+
+@media only screen and (max-width: 950px) {
+  .portfolio__galleryItem--activeTwo .imageCaption {
+    padding: 50% 20%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .portfolio__galleryItem--activeTwo .imageCaption {
+    padding: 25%;
+  }
+}
+
+.portfolio__galleryItem--activeThree .imageCaption {
+  padding: 5% 35%;
+}
+
+@media only screen and (max-width: 950px) {
+  .portfolio__galleryItem--activeThree .imageCaption {
+    padding: 5% 25%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .portfolio__galleryItem--activeThree .imageCaption {
+    padding: 12% 15%;
   }
 }
 /*# sourceMappingURL=main.css.map */

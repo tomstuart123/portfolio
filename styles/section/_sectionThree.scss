@@ -71,8 +71,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
+    padding-right: 20px;
     @include media(750px) {
         margin-top: 50px;
+        padding: 0 20px;
      }
 }
 
@@ -171,7 +173,7 @@
 }
 
 .lowProd[value]::before {
-  content: '^ Focus Area - learning adobe suite to support working with designers';
+  content: '^ Focus Area - improving my use of adobe suite to support working with designers';
   position: absolute;
   left: 0;
   bottom: -100%;

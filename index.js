@@ -1,8 +1,7 @@
 // TO DO
-// 1: Make portfolio images nicer
-// 2. Work on progress bars colurs (and appear in mobile)
-// 3. Add haircuts
-// 4. Add animations to site
+// 2. Add haircuts
+// 3. Make hover portfolio and progress bars in mobile
+// 4. Animate portfolio / skills section
 // 5. Add Resume page
 // 6. Add about me page
 
