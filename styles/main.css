@@ -295,12 +295,16 @@ h2::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 675px;
+  height: 100vh;
   position: relative;
   z-index: 1;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  background: url(../assets/BackgroundShape.png);
+  background-blend-mode: saturation;
+  background-size: cover;
+  background-position: center;
 }
 
 .landing .landing__wrapper--nav {
@@ -310,6 +314,12 @@ h2::before {
 @media only screen and (max-width: 450px) {
   .landing {
     height: 800px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .landing {
+    background: none;
   }
 }
 
@@ -329,7 +339,7 @@ h2::before {
   }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1000px) {
   .backgroundFirst {
     width: 50%;
   }
@@ -342,7 +352,7 @@ h2::before {
   width: 40%;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1000px) {
   .landing__imageContainer {
     position: static;
     font-size: 2.5rem;
@@ -428,7 +438,7 @@ h2::before {
   }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1000px) {
   .landing__textSection {
     width: 100%;
     text-align: center;
@@ -437,12 +447,12 @@ h2::before {
 
 .landing__header {
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 
 @media only screen and (max-width: 1150px) {
   .landing__header {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
 }
 
@@ -464,7 +474,7 @@ h2::before {
 }
 
 .landing__subHeader {
-  font-size: 1.15rem;
+  font-size: 1.10rem;
   color: #747A87;
 }
 
@@ -475,7 +485,7 @@ h2::before {
 }
 
 .landing__paragraph {
-  font-size: 1.15rem;
+  font-size: 1.10rem;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -484,7 +494,7 @@ h2::before {
   }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1000px) {
   .landing__paragraph {
     display: none;
   }
@@ -784,7 +794,7 @@ progress {
 }
 
 .lowDev[value]::before {
-  content: '^ To Improve - building my own Blockchain in Node.js';
+  content: '^ To improve - building my own Blockchain in Node.js';
   position: absolute;
   left: 0;
   bottom: -150%;
@@ -799,7 +809,7 @@ progress {
 }
 
 .lowProd[value]::before {
-  content: '^ To Improve - daily work in the adobe suite with designers';
+  content: '^ To improve - daily work w. designers (adobe suite)';
   position: absolute;
   left: 0;
   bottom: -150%;
