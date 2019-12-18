@@ -41,12 +41,17 @@
             list-style-type: none;
             text-decoration: none;
             color: gray;
-    cursor: pointer;
-    width: 150px;
-    @include media(450px) {
-       font-size: 0.8rem;
-     }
+            cursor: pointer;
+            width: 150px;
+            @include media(450px) {
+              font-size: 0.8rem;
+            }
         }
+        .portfolio__link:hover {
+            color: black;
+            cursor: pointer;
+        }
+
     }
     @include media(950px) {
        width: 60%;
@@ -63,14 +68,11 @@
     position: relative;
 }
 
-.portfolio__link:hover {
-    color: black;
-    cursor: pointer;
-}
 
-.portfolio__item--active .portfolio__link {
-    color: black;
-}
+
+// .portfolio__item--active .portfolio__link {
+//     color: black;
+// }
 
 
 .portfolio__item--active::before {

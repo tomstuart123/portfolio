@@ -1159,6 +1159,11 @@ progress::-webkit-progress-value {
   }
 }
 
+.portfolio__list .portfolio__item .portfolio__link:hover, .portfolio__list .portfolio__item--active .portfolio__link:hover {
+  color: black;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 950px) {
   .portfolio__list {
     width: 60%;
@@ -1179,15 +1184,6 @@ progress::-webkit-progress-value {
 
 .portfolio__item--active {
   position: relative;
-}
-
-.portfolio__link:hover {
-  color: black;
-  cursor: pointer;
-}
-
-.portfolio__item--active .portfolio__link {
-  color: black;
 }
 
 .portfolio__item--active::before {
