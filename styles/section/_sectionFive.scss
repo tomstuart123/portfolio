@@ -203,20 +203,20 @@
 }
 .portfolio__galleryItem .imageCaption {
   display: none;
-  height: 75%;
+  height: 70%;
   position: absolute;
   top: 0;
   left: 0;
   text-align: center;
-  padding: 8% 20%;
+  padding: 8% 17%;
   @include media(950px) {
        padding: 8% 15%
      }
 }
 
-
 .portfolio__galleryItem--activeTwo .imageCaption {
   padding: 25%;
+  height: 65%;
   @include media(950px) {
        padding: 50% 20%;
      }
@@ -226,7 +226,8 @@
 }
 
 .portfolio__galleryItem--activeThree .imageCaption {
-  padding: 4% 30%;
+  padding: 4% 32%;
+  height: 65%;
   @include media(950px) {
        padding: 5% 25%;
      }
@@ -239,7 +240,7 @@
 .portfolio__galleryItem:hover .imageCaption {
   display: block;
   // background: linear-gradient(to top, rgb(184, 184, 184), 10%, rgb(232, 232, 232));
-   background: rgb(232, 232, 232);
+   background: rgb(242, 242, 242);
   opacity: 0.95; 
   
   h3 {
@@ -274,6 +275,10 @@
   @include media(450px) {
     display: block;
   }
+}
+
+.imageCaption a {
+  font-weight: bold;
 }
 
 

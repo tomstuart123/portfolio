@@ -3,7 +3,7 @@
 .landing {
     display: flex;
     flex-direction: column; 
-    height: 650px;
+    height: 675px;
     position: relative;
     z-index: 1;  
     justify-content: space-evenly; 
@@ -105,7 +105,7 @@
 // CONTENT
 
 .landing__textSection {
-    width: 45%;
+    width: 50%;
      @include media(1150px) {
         width: 50%;
      }   
@@ -117,12 +117,9 @@
 
 .landing__header {
     font-weight: 600;
-    font-size: 2.8rem;
-    @include media(1150px) {
-        font-size: 2.5rem;
-     }
+    font-size: 3rem;
       @include media(1150px) {
-        font-size: 2.8rem;
+        font-size: 3rem;
      }
      @include media(550px) {
         font-size: 2.25rem;

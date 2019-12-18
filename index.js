@@ -1,7 +1,12 @@
-// TO DO
-// 3. Make hover portfolio and progress bars in mobile
+// SHORT TO DO
+    // fix progress bars in moz
+    // make click here
+
+// LONG TO DO
+// 1. Add interests section - VR, Blockchain, EdTech etc & Link to blog
+// 2. In portfolio - add title / links to page permanently
 // 4. Animate portfolio / skills section
-// 5. Add Resume page
+// 5. Add Resume button & page
 // 6. Add about me page
 
 

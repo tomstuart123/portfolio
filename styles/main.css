@@ -295,7 +295,7 @@ h2::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 650px;
+  height: 675px;
   position: relative;
   z-index: 1;
   -webkit-box-pack: space-evenly;
@@ -419,7 +419,7 @@ h2::before {
 }
 
 .landing__textSection {
-  width: 45%;
+  width: 50%;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -437,18 +437,12 @@ h2::before {
 
 .landing__header {
   font-weight: 600;
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 
 @media only screen and (max-width: 1150px) {
   .landing__header {
-    font-size: 2.5rem;
-  }
-}
-
-@media only screen and (max-width: 1150px) {
-  .landing__header {
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
 }
 
@@ -656,14 +650,27 @@ h2::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-right: 20px;
+  padding-right: 40px;
+}
+
+@media only screen and (max-width: 950px) {
+  .skills__sliderHeaders {
+    padding-right: 20px;
+  }
 }
 
 @media only screen and (max-width: 750px) {
   .skills__sliderHeaders {
     margin-top: 50px;
-    padding: 0px;
     font-size: 0.9rem;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .skills__sliderHeaders {
+    padding-right: 0px;
+    font-size: 0.8rem;
   }
 }
 
@@ -674,7 +681,7 @@ h2::before {
 
 .skills__subHeader--active::before {
   content: '';
-  width: 200px;
+  width: 150px;
   height: 10%;
   background-color: #64c2cb;
   position: absolute;
@@ -684,7 +691,13 @@ h2::before {
 
 @media only screen and (max-width: 950px) {
   .skills__subHeader--active::before {
-    width: 150px;
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skills__subHeader--active::before {
+    width: 100px;
   }
 }
 
@@ -697,7 +710,7 @@ h2::before {
 
 .skills__subHeader::before {
   content: '';
-  width: 200px;
+  width: 150px;
   height: 10%;
   background-color: #D0EEED;
   position: absolute;
@@ -707,7 +720,13 @@ h2::before {
 
 @media only screen and (max-width: 950px) {
   .skills__subHeader::before {
-    width: 150px;
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skills__subHeader::before {
+    width: 100px;
   }
 }
 
@@ -765,11 +784,11 @@ progress {
 }
 
 .lowDev[value]::before {
-  content: '^ Focus Area - currently building my own Blockchain in Node.js';
+  content: '^ To Improve - building my own Blockchain in Node.js';
   position: absolute;
   left: 0;
-  bottom: -100%;
-  font-size: 0.5rem;
+  bottom: -150%;
+  font-size: 0.65rem;
   color: gray;
 }
 
@@ -780,11 +799,11 @@ progress {
 }
 
 .lowProd[value]::before {
-  content: '^ Focus Area - improving my use of adobe suite to support working with designers';
+  content: '^ To Improve - daily work in the adobe suite with designers';
   position: absolute;
   left: 0;
-  bottom: -100%;
-  font-size: 0.5rem;
+  bottom: -150%;
+  font-size: 0.65rem;
   color: gray;
 }
 
@@ -1333,12 +1352,12 @@ progress::-webkit-progress-value {
 
 .portfolio__galleryItem .imageCaption {
   display: none;
-  height: 75%;
+  height: 70%;
   position: absolute;
   top: 0;
   left: 0;
   text-align: center;
-  padding: 8% 20%;
+  padding: 8% 17%;
 }
 
 @media only screen and (max-width: 950px) {
@@ -1349,6 +1368,7 @@ progress::-webkit-progress-value {
 
 .portfolio__galleryItem--activeTwo .imageCaption {
   padding: 25%;
+  height: 65%;
 }
 
 @media only screen and (max-width: 950px) {
@@ -1364,7 +1384,8 @@ progress::-webkit-progress-value {
 }
 
 .portfolio__galleryItem--activeThree .imageCaption {
-  padding: 4% 30%;
+  padding: 4% 32%;
+  height: 65%;
 }
 
 @media only screen and (max-width: 950px) {
@@ -1381,7 +1402,7 @@ progress::-webkit-progress-value {
 
 .portfolio__galleryItem:hover .imageCaption {
   display: block;
-  background: #e8e8e8;
+  background: #f2f2f2;
   opacity: 0.95;
 }
 
@@ -1432,4 +1453,7 @@ progress::-webkit-progress-value {
     display: block;
   }
 }
-/*# sourceMappingURL=main.css.map */
+
+.imageCaption a {
+  font-weight: bold;
+}

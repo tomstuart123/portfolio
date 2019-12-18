@@ -76,12 +76,20 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
-    padding-right: 20px;
+    padding-right: 40px;
+     @include media(950px) {
+        padding-right: 20px;
+     }
     @include media(750px) {
         margin-top: 50px;
-        padding: 0px;
         font-size: 0.9rem;
+        padding-right: 40px;
      }
+     @include media(450px) {
+        padding-right: 0px;
+        font-size: 0.8rem;
+     }
+
 }
 
 .skills__subHeader--active {
@@ -92,14 +100,17 @@
 
 .skills__subHeader--active::before {
     content: '';
-    width: 200px;
+    width: 150px;
     height: 10%;
     background-color: $midColour;
     position: absolute;
     bottom: -20px;
     left: 0;
     @include media(950px) {
-        width: 150px;
+        width: 100px;
+     }
+     @include media(600px) {
+        width: 100px;
      }
    
 }
@@ -113,14 +124,17 @@
 
 .skills__subHeader::before {
     content: '';
-    width: 200px;
+   width: 150px;
     height: 10%;
     background-color: $lightColour;
     position: absolute;
     bottom: -20px;
     left: 0;
     @include media(950px) {
-        width: 150px;
+        width: 100px;
+     }
+     @include media(600px) {
+        width: 100px;
      }
     
 }
@@ -166,11 +180,11 @@
 
 
 .lowDev[value]::before {
-  content: '^ Focus Area - currently building my own Blockchain in Node.js';
+  content: '^ To Improve - building my own Blockchain in Node.js';
   position: absolute;
   left: 0;
-  bottom: -100%;
-  font-size: 0.5rem;
+  bottom: -150%;
+  font-size: 0.65rem;
   color: gray;
     @include media(450px) {
         display: none;
@@ -178,11 +192,11 @@
 }
 
 .lowProd[value]::before {
-  content: '^ Focus Area - improving my use of adobe suite to support working with designers';
+  content: '^ To Improve - daily work in the adobe suite with designers';
   position: absolute;
   left: 0;
-  bottom: -100%;
-  font-size: 0.5rem;
+  bottom: -150%;
+  font-size: 0.65rem;
     color: gray;
     @include media(450px) {
         display: none;
