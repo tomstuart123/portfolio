@@ -89,11 +89,10 @@
      } 
 }
 .foundersbeta:hover::before {
-    content: 'Go to FoundersBeta';
-    left: -40px;
+    content: 'Go to Medium';
+    left: -28px;
     @include media(550px) {
         left: 25px;
         text-align: center;
-     } 
+    } 
 }
-

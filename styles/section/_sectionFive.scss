@@ -14,6 +14,13 @@
      }
 }
 
+.portfolio--active2 {
+    height: 550px;
+    // @include media(750px) {
+    //    height: 750px;
+    //  }
+}
+
 .portfolio__container {
     height: auto;
 }
@@ -30,7 +37,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     .portfolio__item, .portfolio__item--active {
         text-decoration: none;
@@ -53,14 +60,14 @@
         }
 
     }
-    @include media(950px) {
-       width: 60%;
-     }
-    @include media(750px) {
-       width: 70%;
-     }
-     @include media(550px) {
+    @include media(1050px) {
        width: 90%;
+     }
+    @include media(850px) {
+       width: 100%;
+     }
+     @include media(600px) {
+       width: 100%;
      }
 }
 
@@ -77,7 +84,7 @@
 
 .portfolio__item--active::before {
     content: '';
-    width: 170px;
+    width: 200px;
     font-weight: 600;
     height: 10%;
     background-color: $midColour;
@@ -85,7 +92,12 @@
     bottom: -20px;
     left: -20px;
     @include media(550px) {
-       width: 100px;
+       width: 120px;
+       left: 0px;
+     }
+
+     @include media(450px) {
+       width: 90px;
        left: 0px;
      }
 }
@@ -95,11 +107,19 @@
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
     grid-template-rows: 300px 300px 300px 300px;
+
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     @include media(750px) {
        grid-template-columns: 1fr;
-       grid-template-rows: 300px 300px 300px 300px 300px 300px;
+              grid-template-rows: 300px 300px 300px 300px 300px 300px;
+     }
+}
+.portfolio__gallery--product, .portfolio__gallery--backend {
+
+    grid-template-rows: 300px 300px;
+    @include media(750px) {
+       grid-template-rows: 300px 300px 300px;
      }
 
 }

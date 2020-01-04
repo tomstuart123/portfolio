@@ -34,6 +34,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.displayNone {
+    display: none;
+}
+
 .visuallyHidden:not(:focus):not(:active) { 
 	  position: absolute !important;
 	  height: 1px; 

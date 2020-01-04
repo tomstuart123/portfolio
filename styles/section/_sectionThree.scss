@@ -1,8 +1,8 @@
 .skills {
     height: 600px;
     padding-top: 40px;
-    @include media(750px) {
-        height: 900px;
+    @include media(950px) {
+        height: 1000px;
      }
 }
 
@@ -13,7 +13,7 @@
 .skills__main {
     flex-direction: row;
     justify-content: space-between;
-    @include media(750px) {
+    @include media(950px) {
         flex-direction: column;
         height: 85%;
      }
@@ -31,7 +31,12 @@
     width: 37.5%;
     height: 70%;
     border-radius: 10%;
-    @include media(750px) {
+    @include media(950px) {
+        width: 90%;
+        max-height: 40%;
+        margin: 0 auto;
+     }
+     @include media(750px) {
         width: 80%;
         max-height: 30%;
         margin: 0 auto;
@@ -46,13 +51,15 @@
     margin: 40px auto;
     display: block;
     @include media(950px) {
-        margin-top: 60px;
-     }
-     @include media(750px) {
         margin: 0 auto;
         height: 85%;
         object-fit: contain;
+        margin-top: 20px;
      }
+      @include media(750px) {
+        margin-top: 10px;
+     }
+
 }
 
 .skills__image--active {
@@ -67,8 +74,9 @@
 .skills__sliderSection {
     width: 50%;
     height: 80%;
-   @include media(750px) {
-        width: 100%;
+   @include media(950px) {
+        width: 90%;
+        margin: 0 auto;
      }
 }
 
@@ -79,11 +87,13 @@
     padding-right: 40px;
      @include media(950px) {
         padding-right: 20px;
+        margin-top: 50px;
+        padding-right: 100px;
      }
     @include media(750px) {
-        margin-top: 50px;
-        font-size: 0.9rem;
         padding-right: 40px;
+        font-size: 0.9rem;
+
      }
      @include media(450px) {
         padding-right: 0px;
@@ -107,7 +117,7 @@
     bottom: -20px;
     left: 0;
     @include media(950px) {
-        width: 100px;
+        width: 150px;
      }
      @include media(600px) {
         width: 100px;
@@ -131,7 +141,7 @@
     bottom: -20px;
     left: 0;
     @include media(950px) {
-        width: 100px;
+        width: 150px;
      }
      @include media(600px) {
         width: 100px;
@@ -150,17 +160,30 @@
 
 .skills__sliderContainer {
     margin-top: 40px;
-     @include media(750px) {
+     @include media(950px) {
         margin-top: 60px;
+     }
+}
+
+.skills__sliderContainer span {
+    font-size: 0.85rem;
+    @include media(1050px) {
+        font-size: 0.7rem;
+     }
+     @include media(950px) {
+        font-size: 0.8rem;
+     }
+     @include media(450px) {
+        font-size: 0.7rem;
      }
 }
 
 .skills__paragraph {
     margin-top: 30px;
-    @include media(950px) {
-        font-size: 0.8rem;
+    @include media(1050px) {
+        font-size: 0.85rem;
      }
-     @include media(750px) {
+     @include media(950px) {
         font-size: 1rem;
      }
      @include media(450px) {
@@ -170,9 +193,12 @@
 
  progress {
     margin-top: 10px;
-    width: 70%;
+    width: 75%;
     position: relative;
-    @include media(950px) {
+     @include media(1150px) {
+        width: 85%;
+     }
+    @include media(1050px) {
         width: 90%;
      }
     
@@ -180,7 +206,7 @@
 
 
 .lowDev[value]::before {
-  content: '^ To improve - building my own Blockchain in Node.js';
+  content: 'Note: Current project is in Node.js (see my blockchain in portfolio)';
   position: absolute;
   left: 0;
   bottom: -150%;
@@ -192,7 +218,7 @@
 }
 
 .lowProd[value]::before {
-  content: '^ To improve - daily work w. designers (adobe suite)';
+  content: 'Note: Currently in brand design for my startup, Eden (see portfolio)';
   position: absolute;
   left: 0;
   bottom: -150%;

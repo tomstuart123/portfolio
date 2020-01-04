@@ -28,15 +28,47 @@ portfolioApp.events = function () {
     })
 
     // in portfolio section, toggle the developer portfolio for the product one on click
-    $('.portfolio__list').on('click', '.portfolio__item--inactive', function (event) {
+    $('.portfolio__list').on('click', '.portfolio__item', function (event) {
         // toggle the titles first
-        $('.portfolio__item').toggleClass('portfolio__item--inactive');
-        $('.portfolio__item').toggleClass('portfolio__item--active');
-        // toggle the height to accommodate the changing portfolio
-        $('.portfolio').toggleClass('portfolio--active');
-        // then toggle the portfolio itself 
-        $('.portfolio__galleryItem').toggleClass('visuallyHidden');
+        console.log(this)
+        $('.portfolio__item').removeClass('portfolio__item--active');
+        $(this).addClass('portfolio__item--active');
     })
+
+    
+    $('.portfolio__list').on('click', '.portfolio__item--frontend', function (event) {
+        // toggle the height to accommodate the changing portfolio
+        $('.portfolio').removeClass('portfolio--active');
+        $('.portfolio').removeClass('portfolio--active2');
+        // then toggle the portfolio itself 
+        $('.portfolio__gallery--frontend').removeClass('visuallyHidden');
+        $('.portfolio__gallery--product').addClass('visuallyHidden');
+        $('.portfolio__gallery--backend').addClass('visuallyHidden');
+
+    })
+
+    $('.portfolio__list').on('click', '.portfolio__item--product', function (event) {
+        // toggle the height to accommodate the changing portfolio
+        $('.portfolio').addClass('portfolio--active');
+        $('.portfolio').removeClass('portfolio--active2');
+        // then toggle the portfolio itself 
+        $('.portfolio__gallery--product').removeClass('visuallyHidden');
+        $('.portfolio__gallery--frontend').addClass('visuallyHidden');
+        $('.portfolio__gallery--backend').addClass('visuallyHidden');
+
+    })
+
+    $('.portfolio__list').on('click', '.portfolio__item--backend', function (event) {
+        // toggle the height to accommodate the changing portfolio
+        $('.portfolio').removeClass('portfolio--active');
+        $('.portfolio').addClass('portfolio--active2');
+        // then toggle the portfolio section itself 
+        $('.portfolio__gallery--product').addClass('visuallyHidden');
+        $('.portfolio__gallery--frontend').addClass('visuallyHidden');
+        $('.portfolio__gallery--backend').removeClass('visuallyHidden');
+
+    })
+
 
     // scroll to contact page
     $('.landing__button').on('click', function (event) {
