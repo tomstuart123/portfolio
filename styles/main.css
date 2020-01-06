@@ -1,4 +1,8 @@
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-size: 20px;
+}
+
 fieldset {
   border: 0px;
   margin: 0px;
@@ -776,30 +780,9 @@ h2::before {
   }
 }
 
-.skills__sliderContainer span {
-  font-size: 0.85rem;
-}
-
-@media only screen and (max-width: 1050px) {
-  .skills__sliderContainer span {
-    font-size: 0.7rem;
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  .skills__sliderContainer span {
-    font-size: 0.8rem;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .skills__sliderContainer span {
-    font-size: 0.7rem;
-  }
-}
-
 .skills__paragraph {
   margin-top: 30px;
+  font-size: 0.95rem;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -817,6 +800,28 @@ h2::before {
 @media only screen and (max-width: 450px) {
   .skills__paragraph {
     font-size: 0.8rem;
+  }
+}
+
+.skills__sliderContainer span {
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 1050px) {
+  .skills__sliderContainer span {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .skills__sliderContainer span {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .skills__sliderContainer span {
+    font-size: 0.7rem;
   }
 }
 

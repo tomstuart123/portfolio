@@ -165,21 +165,11 @@
      }
 }
 
-.skills__sliderContainer span {
-    font-size: 0.85rem;
-    @include media(1050px) {
-        font-size: 0.7rem;
-     }
-     @include media(950px) {
-        font-size: 0.8rem;
-     }
-     @include media(450px) {
-        font-size: 0.7rem;
-     }
-}
+
 
 .skills__paragraph {
     margin-top: 30px;
+    font-size: 0.95rem;
     @include media(1050px) {
         font-size: 0.85rem;
      }
@@ -190,6 +180,19 @@
         font-size: 0.8rem;
      }
 } 
+
+.skills__sliderContainer span {
+    font-size: 0.8rem;
+    @include media(1050px) {
+        font-size: 0.7rem;
+     }
+     @include media(950px) {
+        font-size: 0.8rem;
+     }
+     @include media(450px) {
+        font-size: 0.7rem;
+     }
+}
 
  progress {
     margin-top: 10px;
