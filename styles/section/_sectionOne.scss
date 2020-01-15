@@ -17,10 +17,7 @@
     @include media(450px) {
         height: 800px;
      } 
-     @include media(1000px) {
-        height: 105vh;
-        background: none;
-     } 
+
 }
 
 
@@ -34,7 +31,7 @@
     width: 26.5%;
     z-index: -1;
     
-    @include media(1000px) {
+    @include media(1100px) {
         width: 48.5%;
      } 
 }
@@ -44,7 +41,7 @@
     top: 180px;
     right: 10%;
     width: 35%;
-     @include media(1000px) {
+     @include media(1100px) {
         position: static;
         font-size: 2.5rem;
         margin: 0 auto;
@@ -119,10 +116,12 @@
 
 .landing__textSection {
     width: 50%;
+    margin-top: 65px;
      @include media(1150px) {
+         margin-top: 0px;
         width: 50%;
      }   
-     @include media(1000px) { 
+     @include media(1100px) { 
         width: 100%;
         text-align: center;
      }
@@ -130,7 +129,7 @@
 
 .landing__header {
     font-weight: 600;
-    font-size: 2.7rem;
+    font-size: 2.8rem;
       @include media(1150px) {
         font-size: 2.6rem;
      }
@@ -158,10 +157,10 @@
 
 .landing__paragraph {
     font-size: 1.10rem;
-    @include media(1100px) {
+    @include media(1150px) {
         font-size: 1rem;
      }
-      @include media(1000px) {
+      @include media(1100px) {
         display: none;
      } 
 }

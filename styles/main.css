@@ -325,13 +325,6 @@ h2::before {
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .landing {
-    height: 105vh;
-    background: none;
-  }
-}
-
 .backgroundFirst {
   background: #D0EEED;
   position: absolute;
@@ -342,7 +335,7 @@ h2::before {
   z-index: -1;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .backgroundFirst {
     width: 48.5%;
   }
@@ -355,7 +348,7 @@ h2::before {
   width: 35%;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .landing__imageContainer {
     position: static;
     font-size: 2.5rem;
@@ -440,15 +433,17 @@ h2::before {
 
 .landing__textSection {
   width: 50%;
+  margin-top: 65px;
 }
 
 @media only screen and (max-width: 1150px) {
   .landing__textSection {
+    margin-top: 0px;
     width: 50%;
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .landing__textSection {
     width: 100%;
     text-align: center;
@@ -457,7 +452,7 @@ h2::before {
 
 .landing__header {
   font-weight: 600;
-  font-size: 2.7rem;
+  font-size: 2.8rem;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -498,13 +493,13 @@ h2::before {
   font-size: 1.10rem;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1150px) {
   .landing__paragraph {
     font-size: 1rem;
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .landing__paragraph {
     display: none;
   }
@@ -873,18 +868,6 @@ progress {
   }
 }
 
-progress::-moz-progress-bar {
-  background: #D0EEED;
-}
-
-progress::-webkit-progress-bar {
-  background: #fff;
-}
-
-progress::-webkit-progress-value {
-  background: #D0EEED;
-}
-
 .social {
   background: #f2f2f2;
   padding-top: 40px;
@@ -1173,6 +1156,12 @@ progress::-webkit-progress-value {
   height: 550px;
 }
 
+@media only screen and (max-width: 750px) {
+  .portfolio--active2 {
+    height: 625px;
+  }
+}
+
 .portfolio__container {
   height: auto;
 }
@@ -1303,8 +1292,8 @@ progress::-webkit-progress-value {
 
 @media only screen and (max-width: 750px) {
   .portfolio__gallery--product, .portfolio__gallery--backend {
-    -ms-grid-rows: 300px 300px 300px;
-        grid-template-rows: 300px 300px 300px;
+    -ms-grid-rows: 300px 300px 300px 300px;
+        grid-template-rows: 300px 300px 300px 300px;
   }
 }
 
